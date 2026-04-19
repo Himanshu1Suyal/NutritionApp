@@ -6,24 +6,24 @@ Build a Nutrition Tracker Web App using React with TypeScript that allows users 
 • Delete existing entries
 Functional Requirements
 1. View Nutrition Data
-• Display list of nutrition items from backend
-• Each item should show:
-o Food Name
-o Calories
-o Protein
+  • Display list of nutrition items from saved file
+  • Each item should show:
+    a)Food Name
+    b)Calories
+    c)Protein
 2. Add Nutrition Entry
-• Provide a form with fields:
-o Food Name (string)
-o Calories (number)
-o Protein (number)
-• On submit:
-o Call API (POST)
-o Update UI dynamically
+  • Provide a form with fields:
+    a)Food Name (string)
+    b)Calories (number)
+    c)Protein (number)
+  • On submit:
+    a)Call API (POST)
+    b)Update UI dynamically
 3. Delete Nutrition Entry
-• Each record should have a Delete button
-• On click:
-o Call DELETE API
-o Remove item from UI
+  • Each record should have a Delete button
+  • On click:
+   a)Call DELETE API
+   b)Remove item from UI
 Sample Backend (JSON Server)
 Create a file: nutrition.json
 {
@@ -88,23 +88,23 @@ export interface Nutrition {
  calories: number;
  protein: number;
 }
-Optimization (useMemo) (Optional but recommended)
+Optimization
 • Calculate total calories
 const totalCalories = useMemo(() => {
  return nutritionList.reduce((sum, item) => sum + item.calories, 0);
 }, [nutritionList]);
 UI Expectations
-• Simple form for adding items (use ReactMaterial wherever possible)
-• List view displaying records
-• Delete button for each row
-• Display total calories (optional enhancement)
+  • Simple form for adding items (use ReactMaterial wherever possible)
+  • List view displaying records
+  • Delete button for each row
+  • Display total calories (optional enhancement)
 Acceptance Criteria
-• Data fetched from JSON server on load
-• New record added and reflected instantly
-• Record deleted successfully
+  • Data fetched from JSON server on load
+  • New record added and reflected instantly
+  • Record deleted successfully
 • Proper use of:
-o Components
-o Props
-o State
-o Hooks
-o Axios
+   a)Components
+   b)Props
+   c)State
+   d)Hooks
+   e)Axios
