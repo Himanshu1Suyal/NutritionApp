@@ -27,20 +27,45 @@ o Remove item from UI
 Sample Backend (JSON Server)
 Create a file: nutrition.json
 {
- "nutrition": [
- {
- "id": 1,
- "foodName": "Apple",
- "calories": 95,
- "protein": 0.5
- },
- {
- "id": 2,
- "foodName": "Boiled Egg",
- "calories": 78,
- "protein": 6
- }
- ]
+  "nutrition": [
+    {
+      "id": "1",
+      "foodName": "Chia seeds",
+      "calories": 95,
+      "protein": 0.5
+    },
+    {
+      "id": "2",
+      "foodName": "Tofu",
+      "calories": 78,
+      "protein": 6
+    },
+    {
+      "id": "3",
+      "foodName": "chicken",
+      "calories": 165,
+      "protein": 31
+    },
+    {
+      "id": "4",
+      "foodName": "Poha)",
+      "calories": 216,
+      "protein": 5
+    },
+    {
+      "foodName": "Samosa",
+      "calories": 1500,
+      "protein": 20,
+      "id": "9j6vTFuHc8I"
+    },
+    {
+      "foodName": "Banana",
+      "calories": 100,
+      "protein": 3,
+      "id": "fsLUyevEC4I"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
 Run JSON server:
 npx json-server --watch nutrition.json --port 3001
