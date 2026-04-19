@@ -2,30 +2,30 @@
   "nutrition": [
     {
       "id": "1",
-      "foodName": "Chia seeds",
+      "foodName": "Apple",
       "calories": 95,
       "protein": 0.5
     },
     {
       "id": "2",
-      "foodName": "Tofu",
+      "foodName": "Boiled Egg",
       "calories": 78,
       "protein": 6
     },
     {
       "id": "3",
-      "foodName": "chicken",
+      "foodName": "Grilled Chicken (100g)",
       "calories": 165,
       "protein": 31
     },
     {
       "id": "4",
-      "foodName": "Poha)",
+      "foodName": "Brown Rice (1 cup)",
       "calories": 216,
       "protein": 5
     },
     {
-      "foodName": "Samosa",
+      "foodName": "cake",
       "calories": 1500,
       "protein": 20,
       "id": "9j6vTFuHc8I"
